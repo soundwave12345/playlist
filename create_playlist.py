@@ -152,8 +152,8 @@ def create_m3u_playlist(matched_tracks, output_path, audio_directory):
             rel_path = f"./{audio_file['path'].name}"
 
             # Informazioni traccia
-            f.write(f"#EXTINF:-1,{csv_track['artist']} - {csv_track['title']}")
-            f.write(f"{rel_path}")
+            f.write(f"#EXTINF:-1,{csv_track['artist']} - {csv_track['title']} \n")
+            f.write(f"{rel_path}\n")
 
     print(f"Playlist creata: {output_path}")
 
