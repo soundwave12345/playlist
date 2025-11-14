@@ -1,0 +1,8 @@
+services:
+  playlist:
+    build: .
+    container_name: playlist
+    restart: unless-stopped
+    volumes:
+      - /media/hd0/music/:/app/music
+      - /home/ha/playlists/mancanti:/app/mancanti
