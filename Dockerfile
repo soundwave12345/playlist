@@ -3,7 +3,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 WORKDIR /app
-COPY create_plylist.py ./
+COPY create_playlist.py ./
 
 RUN pip install --no-cache-dir mutagen watchdog requests schedule thefuzz fuzzywuzzy python-Levenshtein
 
